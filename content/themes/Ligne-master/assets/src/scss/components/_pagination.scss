@@ -1,0 +1,27 @@
+.pagination {
+  width: 100%;
+  padding: 60px 0 100px;
+  font-family: Georgia;
+  color: $text-color-gray;
+  font-size: 0;
+  display: table;
+  margin: 0 auto;
+  a {
+    font-size: 20px;
+    display: table-cell;
+    width: 49%;
+    vertical-align: middle;
+    text-align: center;
+    & + a {
+      border-left: 1px solid $border-color-base;
+    }
+  }
+  .prev.center {
+    text-align: right;
+    padding: 15px 30px 15px 0;
+  }
+  .next.center {
+    text-align: left;
+    padding: 15px 0 15px 30px;
+  }
+}

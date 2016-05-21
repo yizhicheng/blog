@@ -1,0 +1,18 @@
+.info {
+  border-bottom: 1px solid $border-color-base;
+  @extend .clearfix;
+  a {
+    float: left;
+    padding: 20px 0;
+    text-align: center;
+    color: $text-color-gray;
+    font-size: 14px;
+    &.info-about {
+      width: 62px;
+    }
+    &.info-right {
+      width: 146px;
+      border-left: 1px solid $border-color-base;
+    }
+  }
+}

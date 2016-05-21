@@ -1,0 +1,68 @@
+html {
+  @include selection();
+}
+
+body {
+  @include font-family();
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $text-color-base;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#wrap {
+  @extend .clearfix;
+}
+
+.left {
+  width: 210px;
+  float: left;
+  padding-left: 40px;
+}
+
+.right {
+  width: 680px;
+  float: left;
+  margin-bottom: 100px;
+  min-height: 600px;
+  border-left: 1px solid $border-color-base;
+}
+
+.hidden {
+  display: none!important;
+}
+
+.drawer-toggle {
+  display: none;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+blockquote {
+  border-left: 2px solid $border-color-base;
+  padding-left: 15px;
+  color: $text-color-gray;
+  font-style: italic;
+  font-size: 0.875rem;
+}
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto;
+  border-left: 2px solid $border-color-base;
+  background: $box-bg-color;
+  font-family: "Courier New", Consolas, monopace, FangSong, STFangsong;
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+    tab-size: 4;
+  }
+}
+
+code {
+  background: $box-bg-color;
+  padding: 1px 5px;
+}

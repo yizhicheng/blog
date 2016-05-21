@@ -1,0 +1,18 @@
+{{! This is the post loop - each post will be output using this markup }}
+{{#foreach posts}}
+<article class="post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+        <section class="post-meta">
+            {{tags separator=" · " suffix=" · "}}<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="YYYY-MM-DD"}}</time>
+        </section>
+    </header>
+    <section class="post-excerpt">
+        <p>{{excerpt words="26"}}</p>
+        <p><a class="read-more" href="{{url}}">Read Me</a></p>
+    </section>
+</article>
+{{/foreach}}
+
+{{! Previous/next page links - displayed on every page }}
+{{pagination}}

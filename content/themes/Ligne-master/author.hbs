@@ -1,0 +1,27 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! The big featured header }}
+
+{{! Everything inside the #author tags pulls data from the author }}
+{{#author}}
+    <header class="main-header">
+      <h1>
+        <a href="{{@blog.url}}">{{@blog.title}}</a>
+      </h1>
+    </header>
+
+    <main class="content" role="main">
+        <section class="author-profile">
+            <h1 class="author-title">{{name}}</h1>
+            {{#if website}}<p class="author-link icon-link"><a href="{{website}}">{{website}}</a></p>{{/if}}
+            {{#if bio}}
+                <p class="author-bio">{{bio}}</p>
+            {{/if}}
+            <div class="author-meta">
+                {{#if location}}<em> in </em><em class="author-location icon-location">{{location}}</em>{{/if}}
+            </div>
+        </section>
+    </main>
+
+{{/author}}
