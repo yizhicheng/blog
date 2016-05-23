@@ -11,7 +11,7 @@ config = {
     // When running Ghost in the wild, use the production environment.
     // Configure your URL and mail settings here
     production: {
-        url: 'http://blog.awslearn.tk:2368',
+        url: 'http://blog.awslearn.tk',
         mail: {},
         database: {
             client: 'sqlite3',
@@ -31,7 +31,7 @@ config = {
     development: {
         // The url to use when providing links to the site, E.g. in RSS and email.
         // Change this to your Ghost blog's published URL.
-        url: 'http://localhost:2368',
+        url: 'http://blog.awslearn.tk',
 
         // Example mail config
         // Visit http://support.ghost.org/mail for instructions
